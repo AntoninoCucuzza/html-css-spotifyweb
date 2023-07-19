@@ -41,7 +41,9 @@
     height: 100px;
     width: 200px;
 }
-.debug .voci{
+.debug .user,
+.debug .personal_area, 
+.debug .playlist{
     background-color: green;
     height: 100px;
     width: 100%;
