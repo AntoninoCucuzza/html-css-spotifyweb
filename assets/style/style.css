@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --spfy-black: #000 ;
+    --spfy-white: #fff  ;
+    --spfy-bg-menu: #000 ;
+    --spfy-menu-text: #6f6f6f ;
+    --spfy-menu-text-hover: #fdfdfd ;
+    --spfy-bg-tools: #282828  ;
+    --spfy-icon: #a3a3a3 ;
+    --spfy-icon-hover: #d2d2d2 ;
+    --spfy-nav: #7d7f84 ;
+    --spfy-primary: #adff2f ;
+}
