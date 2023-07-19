@@ -18,7 +18,9 @@
     --spfy-primary: #adff2f ;
 }
 
-
+body{
+    font-family: 'DM Sans', sans-serif;
+}
 
 
 
@@ -93,9 +95,10 @@
     width: calc(100% - 250px);
 }
 /* col- */
-.col-2{
-    width: calc(100%/12*2);
-
+.colonna{
+    width: 80%;
+    max-width: 300px;
+    min-width: 250px;
    
 }
 .col-10{
