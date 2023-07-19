@@ -9,7 +9,7 @@
 } 
 
 .debug .menu{
-
+    flex-wrap: wrap;
     width: 250px;
 }
 
@@ -28,7 +28,35 @@
     background-color: aliceblue;
 }
 .debug .upgrade{
-    
+    flex-direction: row-reverse;
     height: 100px;
    
+}
+
+.debug .blocco{
+    background-color: greenyellow;
+    height: 100px;
+    width: 200px;
+}
+.debug .voci{
+    background-color: green;
+    height: 100px;
+    width: 100%;
+}
+
+.voci:last-child{
+    align-self: flex-end;
+}
+
+.debug .logo{
+    background-color: brown;
+    height: 100px;
+    width: 100%;
+}
+
+.debug .banner{
+    background-color: yellow;
+    height: 100px;
+    width: 200px;
+    
 }
