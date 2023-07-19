@@ -6,7 +6,8 @@
 
 :root{
     --spfy-black: #000 ;
-    --spfy-white: #fff  ;
+    --spfy-white: #fff ;
+    --spfy-bg-main: #141922;
     --spfy-bg-menu: #000 ;
     --spfy-menu-text: #6f6f6f ;
     --spfy-menu-text-hover: #fdfdfd ;
@@ -16,3 +17,36 @@
     --spfy-nav: #7d7f84 ;
     --spfy-primary: #adff2f ;
 }
+
+
+/* #region utility */ 
+
+/* flex */
+.f-end{
+    justify-content: end;
+}
+.d-flex{
+    display: flex;
+}
+/* row */
+.row{
+    display: flex;
+    height: 100%;
+}
+
+.row-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-w{
+    width: calc(100% - 250px);
+}
+/* col- */
+.col-2{
+    width: calc(100%/12*2);
+}
+.col-10{
+    width: calc(100%/12*10);
+}
+/* #endregion utility */ 
