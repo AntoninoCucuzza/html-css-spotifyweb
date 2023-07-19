@@ -20,6 +20,13 @@
 
 
 /* #region utility */ 
+/* container */
+.container{
+    max-width: 95%;
+    width: 100%;
+    margin: auto;
+   
+}
 
 /* flex */
 .f-end{
@@ -30,6 +37,7 @@
 }
 /* row */
 .row{
+    flex-wrap: wrap;
     display: flex;
     height: 100%;
 }
