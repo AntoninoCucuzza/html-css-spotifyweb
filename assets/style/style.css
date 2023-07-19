@@ -19,6 +19,43 @@
 }
 
 
+
+
+
+
+/* #region main */
+#site_main{
+    background-color: var(--spfy-bg-main);
+}
+/* #region menu */
+.menu{
+    background-color: var(--spfy-bg-menu);
+}
+/* #endregion menu */
+
+/* #region Upgrade */
+.upgrade{
+    background-color: var(--spfy-bg-menu);
+    opacity: 0.5;
+}
+/* #endregion Upgrade */
+
+/* #region content */
+.content{
+    background-color: var(--spfy-bg-main);
+}
+/* #endregion content */
+
+/* #region tools */
+.tools{
+    background-color: var(--spfy-bg-tools);
+}
+/* #endregion tools */
+
+
+/* #region main */
+
+
 /* #region utility */ 
 /* container */
 .container{
@@ -40,6 +77,8 @@
     flex-wrap: wrap;
     display: flex;
     height: 100%;
+    
+    
 }
 
 .row-c{
@@ -53,6 +92,8 @@
 /* col- */
 .col-2{
     width: calc(100%/12*2);
+
+   
 }
 .col-10{
     width: calc(100%/12*10);
