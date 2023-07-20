@@ -36,6 +36,9 @@ nav ul a{
     color: var(--spfy-nav);
 }
 
+nav ul li:hover {
+    border-bottom: 3px solid var(--spfy-primary);
+}
 
 /* #region main */
 #site_main{
@@ -45,24 +48,46 @@ nav ul a{
 .menu{
     background-color: var(--spfy-bg-menu);
     width: 250px;
+    flex-direction: column;
+    color: var(--spfy-white);
+}
+.box img{
+    padding: 0 1rem;
+} 
+.box img:hover  { 
+    border-left: 3px solid var(--spfy-primary);
+}
+.box img:hover + span{ 
+    color: var(--spfy-primary);
+}
+.img-fix{
+    width: 50%;
+    max-width: 75px;
+}
+.logo{
+    padding: 0 4rem 1rem 0;
+}
+.personal_area > img{
+    object-fit: cover;
+}
+.user{
+    margin-top: auto;
 }
 /* #endregion menu */
 
 /* #region Upgrade */
 .upgrade{
     background-color: var(--spfy-bg-menu);
-    opacity: 0.5;
     height: 100px;
 }
 /* #endregion Upgrade */
 
 /* #region content */
 
-nav ul li:hover {
-    border-bottom: 3px solid var(--spfy-primary);
-    
+.discover{
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 .content{
     background-color: var(--spfy-bg-main);
     color: var(--spfy-white);
@@ -77,6 +102,7 @@ nav ul li:hover {
 .circle {
     border-radius: 50%;
 }
+
 /* #endregion content */
 
 /* #region tools */
@@ -110,13 +136,25 @@ nav ul li:hover {
     width: 100%;
 }
 /* container */
+
 .container{
     max-width: 95%;
     width: 100%;
-    margin: auto;
-   
+    margin: auto;  
+}
+/* position */
+.p-relative{
+    position: relative;
 }
 
+.p-absolute{
+    position: absolute;
+}
+/* display */
+.d-none{
+    display: none;
+
+}
 /* flex */
 .f-end{
     justify-content: end;
@@ -130,12 +168,14 @@ nav ul li:hover {
 .just-center{
     justify-content: center;
 }
+.align-items{
+    align-items: center;
+}
 /* row */
 .row{
     flex-wrap: wrap;
     display: flex;
     height: 100%;
-    
     
 }
 
@@ -150,11 +190,31 @@ nav ul li:hover {
 /* col- */
 .colonna{
     width: 80%;
-    max-width: 300px;
-    min-width: 250px;
+    max-width: 230px;
+    min-width: 200px;
    
 }
 .col-10{
     width: calc(100%/12*10);
 }
 /* #endregion utility */ 
+
+@media (max-width: 550px) {  
+    .colonna{
+        max-width: none;
+        min-width: 250px;
+    }
+    .row{
+        justify-content: center;
+    }
+  }
+
+@media (max-width: 768px) {  
+    .menu-hide{    
+        width: 50px;
+    } 
+    
+    .row-w{
+        width: calc(100% - 50px);
+    }
+  }

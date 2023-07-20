@@ -13,14 +13,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- /google fonts -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /fontawesome -->
 </head>
 <body class="">
     <main id="site_main">
 
         <div class="row">
-            <div class="menu d-flex space-btw">
-                <div class="logo"></div>
-                <div class="personal_area"></div>
+            <div class="menu menu-hide d-flex space-btw">
+                <div class="logo"><a href="#"><img class="img-flow" src="./assets/img/logo.svg" alt=""></a></div>
+                <div class="personal_area d-flex ">
+                    <div class="box">
+                        <div class=" d-flex align-items">
+                            <img class=" img-fix" src="./assets/img/home.svg" alt="">
+                            <span>Home</span>
+                        </div>
+                        <div class=" d-flex align-items">
+                            <img class=" img-fix" src="./assets/img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </div>
+                        <div class=" d-flex align-items">
+                            <img class=" img-fix" src="./assets/img/libreria.svg" alt="">
+                            <span>La tua libreria</span>
+                        </div>
+
+                    </div>
+               
+                </div>
+                
                 <div class="playlist"></div>
                 <div class="user"></div>
             </div>
@@ -29,19 +50,18 @@
                     <div class="banner"></div>
                 </div>
                 <div class="content">
-                    <nav class="d-flex just-center">
-                        <ul class="list-unstyled list-inline">
-                            <li class="caps"><a href="#">In evidenza</a></li>
-                            <li class="caps"><a href="#">podcast</a></li>
-                            <li class="caps"><a href="#">classifiche</a></li>
-                            <li class="caps"><a href="#">generi e mood</a></li>
-                            <li class="caps"><a href="#">nuove uscite</a></li>
-                            <li class="caps"><a href="#">scopri</a></li>
-                        </ul>
-
-                    </nav>
+                        <nav class="d-flex just-center">
+                            <ul class="list-unstyled list-inline discover">
+                                <li class="caps"><a href="#">In evidenza</a></li>
+                                <li class="caps"><a href="#">podcast</a></li>
+                                <li class="caps"><a href="#">classifiche</a></li>
+                                <li class="caps"><a href="#">generi e mood</a></li>
+                                <li class="caps"><a href="#">nuove uscite</a></li>
+                                <li class="caps"><a href="#">scopri</a></li>
+                            </ul>
+                        </nav>
                     <div class="container">
-                        <h1>recently played</h1>
+                        <h1 >recently played</h1>
                         <div class="row">
                             <div class="colonna">
                                 <div class="card">
@@ -52,7 +72,10 @@
                             </div>
                             <div class="colonna">
                                 <div class="card">
-                                    <img class="img-flow" src="./assets/img/stranger.jpeg" alt="">
+                                    <div class=" d-flex align-items just-center" >
+                                        <i class=" fa-regular fa-circle-play fa-xl d-none"></i>
+                                        <img class="img-flow" src="./assets/img/stranger.jpeg" alt="">
+                                    </div>
                                     <h2>Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)</h2>
                                     <h4>Kyle Dixon & Michael Stein </h4>
                                 </div>
@@ -96,9 +119,10 @@
                         <span>Più ascolti, più accurati saranno i suggerimenti</span>
                         <div class="row">
                             <div class="colonna">
-                                <div class="card">
+                                <div class="card">              
                                     <img class="img-flow" src="./assets/img/radar.jpeg" alt="">
                                     <h2>Release Radar</h2>
+                                    
                                 </div>
                             </div>
                             <div class="colonna">
@@ -119,13 +143,13 @@
                             <div class="colonna">
                                 <div class="card ">
                                     <img class="circle img-flow" src="./assets/img/youg.jpeg" alt="">
-                                    <h2>Daily Mix 1</h2>
+                                    <h2>Lana del Ray</h2>
                                 </div>
                             </div>
                             <div class="colonna">
                                 <div class="card ">
                                     <img class="circle img-flow" src="./assets/img/einaudi.jpeg" alt="">
-                                    <h2>Daily Mix 1</h2>
+                                    <h2>Ludovico Einaudi</h2>
                                 </div>
                             </div>
                            
