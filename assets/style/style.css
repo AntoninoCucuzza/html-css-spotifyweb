@@ -49,17 +49,16 @@ nav ul li:hover {
     background-color: var(--spfy-bg-menu);
     width: 250px;
     flex-direction: column;
-    color: var(--spfy-white);
+    color: var(--spfy-menu-text);
 }
 .box img{
     padding: 0 1rem;
 } 
-.box img:hover  { 
+.box .area:hover  { 
     border-left: 3px solid var(--spfy-primary);
-}
-.box img:hover + span{ 
     color: var(--spfy-primary);
 }
+
 .img-fix{
     width: 50%;
     max-width: 75px;
@@ -72,6 +71,29 @@ nav ul li:hover {
 }
 .user{
     margin-top: auto;
+}
+
+.playlist {
+    padding: 1rem;
+    
+}
+.playlist > h2{
+    color: var(--spfy-white);
+}
+.playlist a ,
+.playlist li{
+    color: var(--spfy-menu-text);
+    padding-top: 1rem;
+}
+.playlist i {
+    padding-right: 1rem;
+}
+
+.lista_playlist{
+    flex-direction: column;
+}
+.playlist > div :hover{
+    color: var(--spfy-menu-text-hover);
 }
 /* #endregion menu */
 
@@ -120,7 +142,7 @@ nav ul li:hover {
 } 
 .z-{
     z-index: -999;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .card img:hover + .z-{
     z-index: 999;
@@ -227,11 +249,8 @@ nav ul li:hover {
 }
 /* #endregion utility */ 
 
-@media (max-width: 550px) {  
-    .colonna{
-        max-width: none;
-        min-width: 250px;
-    }
+@media (max-width: 576px) {  
+    
     .row{
         justify-content: center;
     }
@@ -262,5 +281,10 @@ nav ul li:hover {
     .d-block-sm{
         display: block;
     }
-  
+    .colonna{
+        max-width: 250px;
+    }
+    .container-sm{
+        max-width: 500px;
+    }
   }
