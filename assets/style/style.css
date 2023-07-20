@@ -99,6 +99,16 @@ nav ul li:hover {
     text-align: center;
     margin: 1rem;
 }
+.card img:hover{
+    opacity: 0.5;
+} 
+.z-{
+    z-index: -999;
+    transition: all 0.5s;
+}
+.card img:hover + .z-{
+    z-index: 999;
+} 
 .circle {
     border-radius: 50%;
 }
@@ -149,6 +159,9 @@ nav ul li:hover {
 
 .p-absolute{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* display */
 .d-none{
