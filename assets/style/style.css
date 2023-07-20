@@ -97,10 +97,10 @@ nav ul li:hover {
 }
 .user{
     padding: 1rem;
-    flex: wrap;
 }
-.user img{
+.download{
     width: 30px;
+    height: 30px;
     padding-right: 0.25rem;
 }
 .divisore{
@@ -298,6 +298,16 @@ nav ul li:hover {
     }
     .logo{
         padding: 0.25rem;
+    }
+    .user{
+        padding: 0.5rem;
+    }
+    .download{
+        padding: 0;
+        margin: auto;
+    }
+    .just-center-sm{
+        justify-content: center;
     }
     .d-block-sm{
         display: block;
