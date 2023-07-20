@@ -65,7 +65,7 @@ nav ul li:hover {
     max-width: 75px;
 }
 .logo{
-    padding: 0 4rem 1rem 0;
+    padding: 1rem 4rem 1rem 1rem;
 }
 .personal_area > img{
     object-fit: cover;
@@ -79,6 +79,22 @@ nav ul li:hover {
 .upgrade{
     background-color: var(--spfy-bg-menu);
     height: 100px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.upgrade a{
+    color: var(--spfy-white);
+}
+.banner{
+    background-color: transparent;
+    border: 2px solid var(--spfy-white);
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    border-radius: 50px;
+}
+
+.banner:hover{
+    scale: 1.25;
 }
 /* #endregion Upgrade */
 
