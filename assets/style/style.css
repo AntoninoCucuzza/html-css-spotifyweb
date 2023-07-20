@@ -182,7 +182,6 @@ nav ul li:hover {
 /* display */
 .d-none{
     display: none;
-
 }
 /* flex */
 .f-end{
@@ -246,4 +245,22 @@ nav ul li:hover {
     .row-w{
         width: calc(100% - 50px);
     }
+    .d-none-sm{
+        display: none;
+    }
+
+    .box img{
+        padding: 0;
+    }
+    .img-fix{
+        max-width: 50px;
+        width: 100%;
+    }
+    .logo{
+        padding: 0.25rem;
+    }
+    .d-block-sm{
+        display: block;
+    }
+  
   }
