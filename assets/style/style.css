@@ -95,6 +95,27 @@ nav ul li:hover {
 .playlist > div :hover{
     color: var(--spfy-menu-text-hover);
 }
+.user{
+    padding: 1rem;
+    flex: wrap;
+}
+.user img{
+    width: 30px;
+    padding-right: 0.25rem;
+}
+.divisore{
+    background-color: var(--spfy-white);
+    height: 2px;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.shaped-img{
+    background-color: var(--spfy-icon);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    
+}
 /* #endregion menu */
 
 /* #region Upgrade */
