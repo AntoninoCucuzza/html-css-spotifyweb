@@ -254,16 +254,53 @@
                     <img class="img-flow-sm" src="./assets/img/sinister.jpeg" alt="">
                     <div class="wrapper">
                         <h4 class="not">Sinister</h4>
-                        <h6>Brano nome</h6>
+                        <a href="#">Brano nome</a>
                     </div>
                     <div class="wrapper">
                         <i class="fa-regular fa-heart"></i>
                         <i class="fa-regular fa-folder"></i>
                     </div>
                 </div>
-                <div class="tool-bar"></div>
-                <div class="mixer"></div>
+                <!-- /listening -->
+                <div class="tool-bar d-flex ">
+                    <div class="tools-button  d-flex align-items just-center ">
+                        <i class="fa-solid fa-shuffle fa-xl"></i>
+                        <i class="fa-solid fa-backward-step fa-xl"></i>
+                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                        <i class="fa-solid fa-forward-step fa-xl"></i>
+                        <i class="fa-solid fa-arrow-rotate-right fa-xl"></i>
+                    </div>
+                    <div class="time d-flex align-items just-center d-none-sm">
+                        <span>0.25</span>
+                        <div class="time-bar">
+                            <div class="used-bar d-flex align-items just-end">
+                                <div class="ball"></div>
+                            </div>
+                        </div>
+                        <span>4.35</span>
+                    </div>
+                </div>
+                <!-- /tool-bar -->
+                <div class="mixer d-flex align-items">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="mixer-bar d-none-sm">
+                        <div class="used-bar d-flex align-items just-end">
+                            <div class="ball"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /mixer -->
+
             </div>
+        </div>
+        <div id="mobile-bar" class=" d-flex align-items just-center">
+          
+            <div class="time-bar d-none d-block-sm">
+                <div class="used-bar"></div>
+            </div>
+          
         </div>
         <!-- /tools -->
     </main>
