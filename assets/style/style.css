@@ -36,9 +36,11 @@ nav ul a{
     color: var(--spfy-nav);
 }
 
-nav ul li:hover {
+nav ul li:hover a {
     border-bottom: 3px solid var(--spfy-primary);
+    color: var(--spfy-white);
 }
+
 
 /* #region main */
 #site_main{
@@ -47,9 +49,11 @@ nav ul li:hover {
 /* #region menu */
 .menu{
     background-color: var(--spfy-bg-menu);
+    color: var(--spfy-menu-text);
+    height: calc(100vh - 100px);
     width: 250px;
     flex-direction: column;
-    color: var(--spfy-menu-text);
+    overflow-y: hidden;
 }
 .box img{
     padding: 0 1rem;
@@ -59,10 +63,6 @@ nav ul li:hover {
     color: var(--spfy-primary);
 }
 
-.img-fix{
-    width: 50%;
-    max-width: 75px;
-}
 .logo{
     padding: 1rem 4rem 1rem 1rem;
 }
@@ -90,7 +90,8 @@ nav ul li:hover {
 }
 
 .lista_playlist{
-    flex-direction: column;
+    overflow-y: auto;
+    height: calc(100vh - 545px);
 }
 .playlist > div :hover{
     color: var(--spfy-menu-text-hover);
@@ -114,7 +115,8 @@ nav ul li:hover {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    
+    margin-right: 0.25rem;
+
 }
 /* #endregion menu */
 
@@ -177,7 +179,25 @@ nav ul li:hover {
 /* #region tools */
 .tools{
     background-color: var(--spfy-bg-tools);
+    color: var(--spfy-white);
+    position: sticky;
     height: 100px;
+    width: 100%;
+    padding: 1rem 0.5rem;
+}
+
+.listening > img{
+    margin-right: 1rem;
+}
+.tools .wrapper,
+.tools .wrapper i{
+    padding-right: 1rem;
+}
+.tools .wrapper :not(h4){
+    color: var(--spfy-icon);
+}
+.tools .wrapper i:hover{
+    color: var(--spfy-white);
 }
 /* #endregion tools */
 
@@ -203,6 +223,14 @@ nav ul li:hover {
 /* img */
 .img-flow{
     width: 100%;
+}
+.img-flow-sm{
+    width: 100%;
+    max-width: 60px;
+}
+.img-fix{
+    width: 50%;
+    max-width: 75px;
 }
 /* container */
 
