@@ -414,4 +414,13 @@ nav ul li:hover a {
     .container-sm{
         max-width: 500px;
     }
-  }
+    .tools{
+        height: 95px;
+    }
+    #mobile-bar{
+        height: 5px;
+    }
+    .time-bar{
+        height: 100%;
+    }
+}
