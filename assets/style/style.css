@@ -146,6 +146,10 @@ nav ul li:hover a {
 /* #endregion Upgrade */
 
 /* #region content */
+.content h4,
+.content span{
+    color:var(--spfy-menu-text) ;
+}
 
 .discover{
     flex-wrap: wrap;
@@ -361,6 +365,7 @@ nav ul li:hover a {
 .col-10{
     width: calc(100%/12*10);
 }
+
 /* #endregion utility */ 
 
 @media (max-width: 576px) {  
@@ -422,5 +427,8 @@ nav ul li:hover a {
     }
     .time-bar{
         height: 100%;
+    }
+    .row{
+        justify-content: center;
     }
 }
